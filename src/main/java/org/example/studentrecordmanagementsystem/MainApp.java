@@ -9,11 +9,9 @@ public class MainApp extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("front.fxml"));
-        Scene scene = new Scene(loader.load());
-
-        stage.setTitle("Student Management System");
-        stage.setScene(scene);
+        FXMLLoader loader = new FXMLLoader(getClass().getResource(
+                "/org/example/studentrecordmanagementsystem/login.fxml"));
+        stage.setScene(new Scene(loader.load()));
         stage.show();
     }
 
